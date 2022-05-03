@@ -1,0 +1,144 @@
+@import "variables";
+
+@import "bootstrap/bootstrap-grid.scss";
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap');
+
+html, body {
+  font-family: "Raleway Regular", sans-serif;
+  font-size: 20px;
+  line-height: 2;
+  color: $body-color;
+}
+
+h1, h2, h3 {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 900;
+  color: $title-color;
+  line-height: 1.4;
+}
+h1 {
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 20px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.row-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+/*** GENERAL ELEMENTS ***/
+.button {
+  display: inline-block;
+  border: 2px solid $border-color;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  color: #121212;
+}
+
+.stripe {
+  height: 15px;
+  background-color: $primary;
+}
+
+.icon-down-wrapper {
+  .icon {
+    margin: 0 0 30px 0;
+    width: 50px;
+    height: 50px;
+    background-image: url('../img/white arrow down.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #4A4A4A;
+  }
+  a {
+    text-transform: uppercase;
+    height: 21px;
+    width: 139px;
+    color: #333333;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    line-height: 21px;
+  }
+  &.inline {
+    .icon, a {
+      vertical-align: middle;
+    }
+    .icon {
+      display: inline-block;
+      margin: 0 50px 0 0;
+    }
+  }
+}
+
+
+/*** HEADER ***/
+header.main {
+  text-transform: uppercase;
+  height: 100px;
+  line-height: 100px;
+
+  nav.top {
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      float: right;
+      display: inline-block;
+
+      li {
+        float: left;
+        margin-left: 60px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        a {
+          color: #333333;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+/*** FOOTER***/
+footer {
+  padding: 10px 0;
+  overflow: hidden;
+  .text-wrapper {
+    float: left;
+    margin-right: 20px;
+    color: rgba(#121212, .4);
+    font-size: 14px;
+    line-height: 47px;
+  }
+  nav {
+    float: left;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      li {
+        float: left;
+        margin-right: 20px;
+        a {
+          color: rgba(#121212, .4);
+          font-size: 14px;
+
+        }
+      }
+    }
+  }
+}

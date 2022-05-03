@@ -1,0 +1,176 @@
+@import "variables";
+
+/*** SLIDER STYLING ***/
+.slider {
+  .item {
+    position: relative;
+    padding: 0;
+
+    img {
+      max-width: 100%;
+    }
+
+    .icon-overlay {
+      position: absolute;
+      left: 30px;
+      bottom: 30px;
+
+      .icon-wrapper {
+        width: 50px;
+        padding-bottom: 2px;
+        border-bottom: 5px solid #FFF;
+        margin-bottom: 20px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .icon-title {
+        text-transform: uppercase;
+        font-size: 22px;
+        letter-spacing: 1px;
+        color: #FFF;
+      }
+    }
+  }
+
+}
+
+/*** Main content ***/
+.col-main {
+  .col-stripe {
+    .stripe {
+      margin-top: 10px;
+    }
+  }
+}
+
+/*** Logo slider ***/
+.logo-item {
+  margin-left: 80px;
+  display: inline-block;
+}
+
+.first {
+  margin-left: 0;
+}
+
+/*** Contact blocks ***/
+.contact-blocks {
+  .col-contact {
+    background-color: $primary;
+    color: #FFF;
+    padding-top: 100px;
+    padding-bottom: 60px;
+  }
+
+  .contact-info {
+    max-width: 240px;
+    margin: 0 auto;
+
+    .contact-image {
+      display: block;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 30px;
+    }
+
+
+
+    .contact-text {
+      position: relative;
+      line-height: 1.7;
+
+      &:before {
+        content: '';
+        position: absolute;
+        right: 100%;
+        margin-top: 8px;
+        margin-right: 40px;
+        display: block;
+        height: 15px;
+        width: 70px;
+        background-color: #FFF;
+      }
+    }
+  }
+
+  .col-blocks {
+    .blocks-wrapper {
+      overflow: hidden;
+      margin-top: 100px;
+      margin-left: -80px;
+
+      .inner-col {
+        background: $bg-light;
+        padding: 50px;
+        height: 100%;
+
+        h3 {
+          color: $title-color;
+        }
+
+        .form-input {
+          border-bottom: 2px solid #121212;
+          background-color: $bg-light;
+        }
+
+        a.button {
+          color: #4A4A4A;
+
+          /*background-color: $bg-light;*/
+          &:hover,
+          &:focus,
+          &:active {
+            color: #E64300;
+            border: solid #E64300;
+          }
+        }
+
+        .contact-text {
+          text-transform: none;
+          font-size: 14px;
+        }
+
+        .form-item {
+          a {
+            color: #4A4A4A;
+            background-color: $bg-light;
+            width: 100px;
+          }
+        }
+      }
+    }
+
+    .col-buttons {
+      .button {
+        display: block;
+        margin: 10px 0 0 0;
+        text-align: center;
+        text-transform: capitalize;
+      }
+    }
+
+    .col-form {
+      opacity: 0.5;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 1px;
+      line-height: 21px;
+
+      .button {
+        display: block;
+        width: 100%;
+      }
+
+      a {
+        color: #FFFFFF;
+        text-align: center;
+        letter-spacing: 1px;
+        background-color: #121212;
+      }
+    }
+  }
+}
